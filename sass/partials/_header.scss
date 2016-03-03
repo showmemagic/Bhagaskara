@@ -1,0 +1,65 @@
+header {
+	background-image: url("../images/backgroundTop.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+    margin: 0 auto;
+    @include rwdImages(2000px, 1000px);
+    h1 {
+    	font-family: "existencelight";
+    	color: #ffffff;
+        font-size: 5em;
+        text-align: center;
+        padding: 3%;
+        margin: 0 auto;
+    }
+    .colorWord {
+    	color: #9f449b;
+    }
+    h2 {
+        color: #ffffff;
+        font-size: 2.5em;
+        font-family: "latohairline";
+        text-align: center;
+        margin: 0 auto;
+    }
+    p {
+        color: #ffffff;
+        font-size: 1.25em;
+        font-family: "latohairline";
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 18%;
+    }
+    .outer {
+        @include flexBox;
+        @include flexDirection(row);
+        @include flexJustify(center);
+        @include flexAlignItems(flex-end);
+        width: 100%;
+        height: 100%;
+    }
+    .innerBottom {
+        align-self: flex-start;
+    }
+    .shape {
+        position: relative;
+    }
+    .icon {
+        position: absolute;
+    }
+
+    // .outerLeft {
+    //     @include flexBox;
+    //     @include flexDirection(row);
+    //     @include flexJustify(flex-start);
+    //     @include flexAlignItems(center);
+    // }
+
+    // .outerRight {
+    //     @include flexBox;
+    //     @include flexDirection(row);
+    //     @include flexJustify(flex-end);
+    //     @include flexAlignItems(center);
+    // }
+}

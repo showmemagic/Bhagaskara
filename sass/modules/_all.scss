@@ -1,0 +1,36 @@
+@mixin rwdImages ($width, $height) {
+    background-size: 100% auto;
+    height: 0;
+    padding-bottom: percentage($height/$width);
+    display: block;
+}
+
+@mixin flexBox {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+}
+
+@mixin flexDirection($value) {
+	-webkit-flex-direction: $value;
+	-moz-webkit-direction: $value;
+	flex-direction: $value;
+}
+
+@mixin flexJustify($position) {
+	-webkit-justify-content: $position;
+	-moz-webkit-content: $position;
+	justify-content: $position;
+}
+
+@mixin flexWrap($wrap) {
+	-webkit-flex-wrap: $wrap;
+	-moz-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+}
+
+@mixin flexAlignItems($align) {
+	-webkit-align-items: $align;
+	-moz-align-items: $align;
+	align-items: $align;
+}

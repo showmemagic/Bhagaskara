@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.baseWidth {
+  width: 1155px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'existencelight';
+  src: url("../fonts/existence-light/existence-light-webfont.eot");
+  src: url("../fonts/existence-light/existence-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/existence-light/existence-light-webfont.woff2") format("woff2"), url("../fonts/existence-light/existence-light-webfont.woff") format("woff"), url("../fonts/existence-light/existence-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latohairline';
+  src: url("../fonts/lato/lato-hairline-webfont.eot");
+  src: url("../fonts/lato/lato-hairline-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-hairline-webfont.woff2") format("woff2"), url("../fonts/lato/lato-hairline-webfont.woff") format("woff"), url("../fonts/lato/lato-hairline-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  background-image: url("../images/backgroundTop.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 50%;
+  display: block;
+}
+
+header h1 {
+  font-family: "existencelight";
+  color: #ffffff;
+  font-size: 5em;
+  text-align: center;
+  padding: 3%;
+  margin: 0 auto;
+}
+
+header .colorWord {
+  color: #9f449b;
+}
+
+header h2 {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-family: "latohairline";
+  text-align: center;
+  margin: 0 auto;
+}
+
+header p {
+  color: #ffffff;
+  font-size: 1.25em;
+  font-family: "latohairline";
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 18%;
+}
+
+header .outer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-webkit-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -moz-webkit-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+header .innerBottom {
+  align-self: flex-start;
+}
+
+header .shape {
+  position: relative;
+}
+
+header .icon {
+  position: absolute;
+}
