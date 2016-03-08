@@ -12,6 +12,10 @@ body {
   margin: 0 auto;
 }
 
+.colorWord {
+  color: #9f449b;
+}
+
 @font-face {
   font-family: 'existencelight';
   src: url("../fonts/existence-light/existence-light-webfont.eot");
@@ -55,10 +59,6 @@ header h1 {
   padding-bottom: 1%;
   width: 100%;
   margin: 0 auto;
-}
-
-header .colorWord {
-  color: #9f449b;
 }
 
 header h2 {
@@ -107,6 +107,11 @@ header p {
   left: 37%;
 }
 
+.shapeContainerTwo .shape:hover {
+  background-image: url("../images/hovershape.png");
+  cursor: pointer;
+}
+
 .shapeContainerFour {
   display: flex;
   width: 100%;
@@ -136,6 +141,11 @@ header p {
   position: absolute;
   top: 20%;
   left: 39%;
+}
+
+.shapeContainerFour .shapeSide .shape:hover {
+  background-image: url("../images/hovershape.png");
+  cursor: pointer;
 }
 
 .shapeContainerOne {
@@ -169,6 +179,12 @@ header p {
   left: 43%;
 }
 
+.shapeContainerOne .shapeCenter .littleShape:hover {
+  background-image: url("../images/hovershape.png");
+  cursor: pointer;
+}
+
+@iport "partials/nav";
 @media only screen and (max-width: 830px) {
   header h1 {
     font-size: 2.5em;

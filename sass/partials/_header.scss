@@ -13,9 +13,6 @@ header {
         width: 100%;
         margin: 0 auto;
     }
-    .colorWord {
-    	color: #9f449b;
-    }
     h2 {
         color: #ffffff;
         font-size: 1.8em;
@@ -58,6 +55,10 @@ header {
                 top: 20%;
                 left: 37%;
             }
+            &:hover {
+                background-image: url("../images/hovershape.png");
+                cursor: pointer;
+            } 
         }
     }
 
@@ -80,13 +81,17 @@ header {
             padding-bottom: 33%;
             background-position: center;
             position: relative;
+
             .icon {
                 width: 21%;
                 position: absolute;
                 top: 20%;
                 left: 39%;
             }
-           
+            &:hover {
+                background-image: url("../images/hovershape.png");
+                cursor: pointer;
+            }   
         }
     }
 }
@@ -117,6 +122,10 @@ header {
                 top: 39%;
                 left: 43%;
             }
+            &:hover {
+                background-image: url("../images/hovershape.png");
+                cursor: pointer;
+            } 
         }    
     }
     
