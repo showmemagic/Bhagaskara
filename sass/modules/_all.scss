@@ -5,6 +5,8 @@
     display: block;
 }
 
+$iconWidth: 100%/6;
+
 @mixin flexBox {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -34,3 +36,16 @@
 	-moz-align-items: $align;
 	align-items: $align;
 }
+
+@mixin flexAlignSelf($alignSelf) {
+	-webki-align-self: $alignSelf;
+	-moz-align-items: $alignSelf;
+	align-self: $alignSelf;
+}
+
+@mixin flexBasis {
+	-webkit-flex-basis: auto;
+	-moz-flex-basis: auto;
+	flex-basis: auto;
+}
+

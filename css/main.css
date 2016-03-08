@@ -49,10 +49,10 @@ header {
 header h1 {
   font-family: "existencelight";
   color: #ffffff;
-  font-size: 3.5em;
+  font-size: 3.75em;
   text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 5%;
+  padding-bottom: 3%;
   width: 100%;
   margin: 0 auto;
 }
@@ -63,7 +63,7 @@ header .colorWord {
 
 header h2 {
   color: #ffffff;
-  font-size: 1.8em;
+  font-size: 2.1875em;
   font-family: "latohairline";
   text-align: center;
   width: 100%;
@@ -72,13 +72,13 @@ header h2 {
 
 header p {
   color: #ffffff;
-  font-size: 1.1em;
+  font-size: 1.25em;
   font-family: "latohairline";
-  width: 60%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
-  padding-top: 1%;
-  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
 .shapeContainerTwo {
@@ -92,19 +92,21 @@ header p {
 
 .shapeContainerTwo .shape {
   width: 16.66667%;
+  border: 2px dashed white;
   background-image: url("../images/topShape.svg");
   background-repeat: no-repeat;
-  background-size: 58%;
-  padding-bottom: 11%;
+  background-size: 76%;
+  padding-bottom: 13%;
   background-position: center;
   position: relative;
 }
 
 .shapeContainerTwo .shape .icon {
-  width: 26%;
+  width: 72%;
   position: absolute;
   top: 20%;
   left: 37%;
+  border: 2px dashed white;
 }
 
 .shapeContainerFour {
@@ -123,73 +125,30 @@ header p {
 
 .shapeContainerFour .shapeSide .shape {
   width: 50%;
+  border: 2px dashed white;
   background-image: url("../images/topShape.svg");
   background-repeat: no-repeat;
-  background-size: 58%;
-  padding-bottom: 33%;
+  background-size: 76%;
+  padding-bottom: 40%;
   background-position: center;
   position: relative;
 }
 
 .shapeContainerFour .shapeSide .shape .icon {
-  width: 21%;
+  width: 74%;
   position: absolute;
   top: 20%;
-  left: 39%;
+  left: 37%;
+  border: 2px dashed white;
 }
 
-.shapeContainerOne {
-  width: 100%;
-  text-align: center;
-}
-
-.shapeContainerOne .shapeCenter {
-  width: 13%;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: -5px;
-}
-
-.shapeContainerOne .shapeCenter .littleShape {
-  width: 100%;
-  background-image: url("../images/topShape.svg");
-  background-repeat: no-repeat;
-  background-size: 36%;
-  padding-bottom: 39%;
-  background-position: center;
-  position: relative;
-}
-
-.shapeContainerOne .shapeCenter .littleShape .icon {
-  width: 14%;
-  position: absolute;
-  top: 39%;
-  left: 43%;
-}
-
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1330px) {
   header h1 {
-    font-size: 2.5em;
-  }
-  header h2 {
-    font-size: 1.5em;
+    font-size: 3.3em;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   header p {
-    font-size: 0.9em;
-    padding-bottom: 1%;
-  }
-}
-
-@media only screen and (max-width: 630px) {
-  .shapeContainerTwo {
-    display: none;
-  }
-  .shapeContainerFour {
-    display: none;
-  }
-  .shapeContainerOne {
-    display: none;
+    padding-bottom: 3%;
   }
 }
