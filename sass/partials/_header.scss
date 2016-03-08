@@ -36,9 +36,9 @@ header {
 .shapeContainerTwo {
         margin:0;
         padding:0;
-        display: flex;
         width: 100%;
-        justify-content: center;
+        @include flexBox;
+        @include flexJustify(center);
         list-style-type: none;
         .shape {
             width: $iconWidth;
@@ -63,14 +63,14 @@ header {
     }
 
 .shapeContainerFour {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
+    @include flexBox;
+    @include flexJustify(space-between);
     .shapeSide {
         width:$iconWidth * 2;
         margin:0;
         padding:0;
-        display:flex;
+        @include flexBox;
         list-style-type: none;
         .shape{
             width: 50%;

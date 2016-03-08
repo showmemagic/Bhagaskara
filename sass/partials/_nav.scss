@@ -1,0 +1,31 @@
+h3 {
+    font-family: "existencelight";
+    display: inline-block;
+    float: left;
+    color: #676767;
+    font-size: 1.3em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.menu {
+    display: inline-block;
+    float: right;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    li {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #676767;
+            font-family: "latoregular";
+            font-weight: 400;
+            font-size: 0.9em;
+            padding-right: 35%;
+            &:active {
+                color: #9f449b;
+            }
+        }
+    }
+}
