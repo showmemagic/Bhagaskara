@@ -1,51 +1,18 @@
-@mixin rwdImages ($width, $height) {
-    background-size: 100% auto;
-    height: 0;
-    padding-bottom: percentage($height/$width);
-    display: block;
-}
-
 $iconWidth: 100%/6;
 
-@mixin flexBox {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: flex;
+@each $icon in build, clean, easy, fully {
+	.#{$icon}Icon {
+		background-image: url("../images/#{$icon}.png");
+		width: 50%;
+		background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 54%;
+        background-position: center;
+        display: inline-block;
+        &:hover {
+        	background-image: url("../images/#{$icon}hover.png")
+        }
+	}
 }
 
-@mixin flexDirection($value) {
-	-webkit-flex-direction: $value;
-	-moz-webkit-direction: $value;
-	flex-direction: $value;
-}
-
-@mixin flexJustify($position) {
-	-webkit-justify-content: $position;
-	-moz-webkit-content: $position;
-	justify-content: $position;
-}
-
-@mixin flexWrap($wrap) {
-	-webkit-flex-wrap: $wrap;
-	-moz-flex-wrap: $wrap;
-	flex-wrap: $wrap;
-}
-
-@mixin flexAlignItems($align) {
-	-webkit-align-items: $align;
-	-moz-align-items: $align;
-	align-items: $align;
-}
-
-@mixin flexAlignSelf($alignSelf) {
-	-webki-align-self: $alignSelf;
-	-moz-align-items: $alignSelf;
-	align-self: $alignSelf;
-}
-
-@mixin flexBasis {
-	-webkit-flex-basis: auto;
-	-moz-flex-basis: auto;
-	flex-basis: auto;
-}
 

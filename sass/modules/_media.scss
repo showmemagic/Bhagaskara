@@ -8,8 +8,22 @@
  			font-size: 1.5em;
  		}
  		p {
- 			font-size: 0.9em;
+ 			font-size: 1em;
  			padding-bottom: 1%;
+ 			width: 70%;
+ 		}
+ 	}
+ 	.menu {
+  		li {
+ 			a {
+ 				padding-right: 15%;
+ 				font-size: 0.8em;
+ 			}
+ 		}
+ 	}
+ 	nav {
+ 		h3 {
+ 			padding-top: 1%;
  		}
  	}
  }
@@ -23,6 +37,30 @@
  	}
  	.shapeContainerOne {
  		display: none;
+ 	}
+ 	.contentContainerFour {
+ 		padding: 0;
+ 		@include flexAlignItems(center);
+ 		@include flexDirection(column);
+ 		@include flexWrap(wrap);
+ 		.contentShape {
+ 			width: 65%;
+ 			@include flexDirection(row);
+ 			text-align: center;
+ 			.buildIcon,
+			.cleanIcon,
+			.easyIcon,
+			.fullyIcon {
+				padding-bottom: 22%;
+			}
+			div {
+				padding-left: 1%;
+			}
+ 			h4 {
+ 				display: inline-block;
+ 				padding-top: 5%;
+ 			}
+ 		}
  	}
  }
 

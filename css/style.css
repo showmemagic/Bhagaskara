@@ -1,3 +1,59 @@
+.buildIcon {
+  background-image: url("../images/build.png");
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 54%;
+  background-position: center;
+  display: inline-block;
+}
+
+.buildIcon:hover {
+  background-image: url("../images/buildhover.png");
+}
+
+.cleanIcon {
+  background-image: url("../images/clean.png");
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 54%;
+  background-position: center;
+  display: inline-block;
+}
+
+.cleanIcon:hover {
+  background-image: url("../images/cleanhover.png");
+}
+
+.easyIcon {
+  background-image: url("../images/easy.png");
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 54%;
+  background-position: center;
+  display: inline-block;
+}
+
+.easyIcon:hover {
+  background-image: url("../images/easyhover.png");
+}
+
+.fullyIcon {
+  background-image: url("../images/fully.png");
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 54%;
+  background-position: center;
+  display: inline-block;
+}
+
+.fullyIcon:hover {
+  background-image: url("../images/fullyhover.png");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -96,12 +152,22 @@ header p {
 
 .shapeContainerTwo .shape {
   width: 16.66667%;
+  position: relative;
+  text-align: center;
+}
+
+.shapeContainerTwo .shape a {
   background-image: url("../images/topShape.svg");
   background-repeat: no-repeat;
-  background-size: 58%;
-  padding-bottom: 11%;
+  background-size: 100%;
+  padding-bottom: 63%;
   background-position: center;
-  position: relative;
+  display: inline-block;
+  width: 58%;
+}
+
+.shapeContainerTwo .shape a:hover {
+  background-image: url("../images/hovershape.png");
 }
 
 .shapeContainerTwo .shape .icon {
@@ -109,11 +175,6 @@ header p {
   position: absolute;
   top: 20%;
   left: 37%;
-}
-
-.shapeContainerTwo .shape:hover {
-  background-image: url("../images/hovershape.png");
-  cursor: pointer;
 }
 
 .shapeContainerFour {
@@ -138,12 +199,22 @@ header p {
 
 .shapeContainerFour .shapeSide .shape {
   width: 50%;
+  position: relative;
+  text-align: center;
+}
+
+.shapeContainerFour .shapeSide .shape a {
   background-image: url("../images/topShape.svg");
   background-repeat: no-repeat;
-  background-size: 58%;
-  padding-bottom: 33%;
+  background-size: 100%;
+  padding-bottom: 63%;
   background-position: center;
-  position: relative;
+  display: inline-block;
+  width: 58%;
+}
+
+.shapeContainerFour .shapeSide .shape a:hover {
+  background-image: url("../images/hovershape.png");
 }
 
 .shapeContainerFour .shapeSide .shape .icon {
@@ -151,11 +222,6 @@ header p {
   position: absolute;
   top: 20%;
   left: 39%;
-}
-
-.shapeContainerFour .shapeSide .shape:hover {
-  background-image: url("../images/hovershape.png");
-  cursor: pointer;
 }
 
 .shapeContainerOne {
@@ -168,51 +234,59 @@ header p {
   display: inline-block;
   margin: 0;
   padding: 0;
-  position: relative;
-  top: -5px;
 }
 
 .shapeContainerOne .shapeCenter .littleShape {
-  width: 100%;
-  background-image: url("../images/topShape.svg");
-  background-repeat: no-repeat;
-  background-size: 36%;
-  padding-bottom: 39%;
-  background-position: center;
+  text-align: center;
   position: relative;
 }
 
 .shapeContainerOne .shapeCenter .littleShape .icon {
-  width: 14%;
+  width: 13%;
   position: absolute;
-  top: 39%;
-  left: 43%;
+  top: 36%;
+  left: 44%;
 }
 
-.shapeContainerOne .shapeCenter .littleShape:hover {
+.shapeContainerOne .shapeCenter .littleShape a {
+  background-image: url("../images/topShape.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 33%;
+  background-position: center;
+  display: inline-block;
+  width: 30%;
+}
+
+.shapeContainerOne .shapeCenter .littleShape a:hover {
   background-image: url("../images/hovershape.png");
-  cursor: pointer;
 }
 
-h3 {
+nav {
+  background-color: #ffffff;
+  padding-bottom: 7%;
+}
+
+nav h3 {
   font-family: "existencelight";
   display: inline-block;
   float: left;
   color: #676767;
   font-size: 1.3em;
+  margin: 0;
   padding-top: 2%;
-  padding-bottom: 2%;
 }
 
 .menu {
   display: inline-block;
   float: right;
+  margin: 0;
   padding-top: 2%;
-  padding-bottom: 2%;
 }
 
 .menu li {
   display: inline-block;
+  margin: 0;
 }
 
 .menu li a {
@@ -229,6 +303,50 @@ h3 {
   color: #9f449b;
 }
 
+.content {
+  background-color: #eeeeee;
+}
+
+.contentContainerFour {
+  width: 100%;
+  margin: 0;
+  padding-top: 7%;
+  padding-bottom: 10%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+
+.contentContainerFour .contentShape {
+  width: 25%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contentContainerFour .contentShape h4 {
+  font-family: "latoregular";
+  color: #676767;
+  margin: 0;
+  padding-top: 16%;
+  text-align: center;
+}
+
+.contentContainerFour .contentShape p {
+  font-family: "latoregular";
+  font-weight: 400;
+  color: #676767;
+  width: 90%;
+  font-size: 0.9em;
+}
+
 @media only screen and (max-width: 830px) {
   header h1 {
     font-size: 2.5em;
@@ -237,8 +355,16 @@ h3 {
     font-size: 1.5em;
   }
   header p {
-    font-size: 0.9em;
+    font-size: 1em;
     padding-bottom: 1%;
+    width: 70%;
+  }
+  .menu li a {
+    padding-right: 15%;
+    font-size: 0.8em;
+  }
+  nav h3 {
+    padding-top: 1%;
   }
 }
 
@@ -251,5 +377,37 @@ h3 {
   }
   .shapeContainerOne {
     display: none;
+  }
+  .contentContainerFour {
+    padding: 0;
+    -webkit-align-items: center;
+    -moz-webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .contentContainerFour .contentShape {
+    width: 65%;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    text-align: center;
+  }
+  .contentContainerFour .contentShape .buildIcon,
+  .contentContainerFour .contentShape .cleanIcon,
+  .contentContainerFour .contentShape .easyIcon,
+  .contentContainerFour .contentShape .fullyIcon {
+    padding-bottom: 22%;
+  }
+  .contentContainerFour .contentShape div {
+    padding-left: 1%;
+  }
+  .contentContainerFour .contentShape h4 {
+    display: inline-block;
+    padding-top: 5%;
   }
 }

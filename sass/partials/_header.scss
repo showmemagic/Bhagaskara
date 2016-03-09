@@ -43,22 +43,28 @@ header {
         .shape {
             width: $iconWidth;
             // border:2px dashed white;
-            background-image: url("../images/topShape.svg");
-            background-repeat: no-repeat;
-            background-size: 58%;
-            padding-bottom: 11%;
-            background-position: center;
             position: relative;
+            text-align: center;
+            a {
+                background-image: url("../images/topShape.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding-bottom: 63%;
+                background-position: center;
+                display: inline-block;
+                width:58%;
+                // transition: background-image 1s;
+                &:hover {
+                    background-image: url("../images/hovershape.png");
+                }   
+            }
             .icon {
                 width: 26%;
                 position: absolute;
                 top: 20%;
                 left: 37%;
             }
-            &:hover {
-                background-image: url("../images/hovershape.png");
-                cursor: pointer;
-            } 
+            
         }
     }
 
@@ -72,26 +78,30 @@ header {
         padding:0;
         @include flexBox;
         list-style-type: none;
-        .shape{
+        .shape {
             width: 50%;
-            // border:2px dashed white;
-            background-image: url("../images/topShape.svg");
-            background-repeat: no-repeat;
-            background-size: 58%;
-            padding-bottom: 33%;
-            background-position: center;
             position: relative;
-
+            text-align: center;
+            a {
+                background-image: url("../images/topShape.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding-bottom: 63%;
+                background-position: center;
+                display: inline-block;
+                width:58%;
+                // transition: background-image 1s;
+                &:hover {
+                    background-image: url("../images/hovershape.png");
+                }   
+            }
             .icon {
                 width: 21%;
                 position: absolute;
                 top: 20%;
                 left: 39%;
             }
-            &:hover {
-                background-image: url("../images/hovershape.png");
-                cursor: pointer;
-            }   
+          
         }
     }
 }
@@ -106,26 +116,29 @@ header {
         display: inline-block;
         margin: 0;
         padding: 0;
-        position: relative;
-        top: -5px;
         .littleShape {
-            width: 100%;
-            background-image: url("../images/topShape.svg");
-            background-repeat: no-repeat;
-            background-size: 36%;
-            padding-bottom: 39%;
-            background-position: center;
+            text-align: center;
             position: relative;
             .icon {
-                width: 14%;
+                width: 13%;
                 position: absolute;
-                top: 39%;
-                left: 43%;
+                top: 36%;
+                left: 44%;
             }
-            &:hover {
-                background-image: url("../images/hovershape.png");
-                cursor: pointer;
-            } 
+            a {
+                background-image: url("../images/topShape.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding-bottom: 33%;
+                background-position: center;
+                display: inline-block;
+                width: 30%;
+                // transition: background-image 1s;
+                &:hover {
+                    background-image: url("../images/hovershape.png");
+                }  
+            }
+            
         }    
     }
     
