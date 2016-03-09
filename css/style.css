@@ -345,6 +345,7 @@ nav h3 {
   color: #676767;
   width: 90%;
   font-size: 0.9em;
+  margin: 0;
 }
 
 @media only screen and (max-width: 830px) {
@@ -396,12 +397,14 @@ nav h3 {
     -moz-flex-direction: row;
     flex-direction: row;
     text-align: center;
+    padding-top: 2%;
   }
   .contentContainerFour .contentShape .buildIcon,
   .contentContainerFour .contentShape .cleanIcon,
   .contentContainerFour .contentShape .easyIcon,
   .contentContainerFour .contentShape .fullyIcon {
-    padding-bottom: 22%;
+    width: 77%;
+    padding-bottom: 31%;
   }
   .contentContainerFour .contentShape div {
     padding-left: 1%;
@@ -409,5 +412,21 @@ nav h3 {
   .contentContainerFour .contentShape h4 {
     display: inline-block;
     padding-top: 5%;
+    font-size: 0.9em;
+  }
+  .contentContainerFour .contentShape p {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contentContainerFour .contentShape .buildIcon,
+  .contentContainerFour .contentShape .cleanIcon,
+  .contentContainerFour .contentShape .easyIcon,
+  .contentContainerFour .contentShape .fullyIcon {
+    width: 29%;
+  }
+  .contentContainerFour .contentShape p {
+    display: none;
   }
 }
