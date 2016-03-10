@@ -36,3 +36,9 @@
 	-moz-flex-direction: $direction;
 	flex-direction: $direction;
 }
+
+@mixin flexAlignContent($alignContent) {
+	-webkit-align-content: $alignContent;
+	-moz-align-content: $alignContent;
+	align-content: $alignContent;
+}

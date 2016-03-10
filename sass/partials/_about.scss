@@ -1,0 +1,61 @@
+.about {
+    background-color: #ffffff;
+}
+
+.aboutUsContainerOne {
+    padding-top: 8%;
+        @include flexBox;
+        @include flexJustify(center);
+        .corners {
+            @include flexBox;
+            width: 35%;
+            background-image: url("../images/aboutus.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+            padding-top: 11%;
+        }
+    }
+    .aboutUsContainerTwo {
+        width: 100%;
+        @include flexBox;
+        @include flexJustify(center);
+        @include flexDirection(row);
+        padding-bottom: 10%;
+        padding-top: 6%;
+        .screens {
+            width: 55%;
+            background-image: url("../images/screens.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-bottom: 35%;
+        }
+        .abouUsText {
+            width: 50%;
+            font-family: "latoregular";
+            padding-left: 3%;
+            @include flexBox;
+            @include flexWrap(wrap);
+            @include flexAlignContent(space-between);
+            @include flexJustify(flex-start);
+            p {
+                font-size: 1em;
+                line-height: 2.5em;
+                color: #676767;
+                font-weight: 400;
+            }
+            a {
+                width: 50%;
+                padding: 4%;
+                color: #ffffff;
+                border-radius: 5px;
+                background-color: #9f449b;
+                text-align: center;
+                vertical-align: middle;
+                font-size: 1.4em;
+                font-weight: 400;
+                box-shadow: 0 5px 1px #6b2e68;
+            }
+        }
+    }
