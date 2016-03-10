@@ -1,18 +1,18 @@
 $iconWidth: 100%/6;
 
 @each $icon in build, clean, easy, fully {
-	.#{$icon}Icon {
-		background-image: url("../images/#{$icon}.png");
-		width: 50%;
-		background-repeat: no-repeat;
-                background-size: 100%;
-                padding-bottom: 54%;
-                background-position: center;
-                display: inline-block;
-                &:hover {
-                	background-image: url("../images/#{$icon}hover.png")
-                }
-	}
+    .#{$icon}Icon {
+        background-image: url("../images/#{$icon}.png");
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 54%;
+        background-position: center;
+        display: inline-block;
+        &:hover {
+            background-image: url("../images/#{$icon}hover.png")
+        }
+    }
 }
 
 

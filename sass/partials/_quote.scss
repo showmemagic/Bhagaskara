@@ -1,0 +1,46 @@
+.quote {
+    background-image: url("../images/quote.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    @include rwdImages(2000px, 624px);
+}
+
+.quoteContainer {
+    margin:0;
+    padding-top: 7%;
+    width: 100%;
+    @include flexBox;
+    @include flexDirection(column);
+    @include flexWrap(wrap);
+    @include flexAlignContent(space-between);
+    @include flexAlignItems(center);
+    // @include flexBox;
+    // @include flexDirection(column);
+    // @include flexJustify(center);
+    // @include flexAlignItems(center);
+    // @include flexWrap(wrap);
+    .quoteShape {
+        @include flexBox;
+        width: $iconWidth;
+        min-width: 130px;
+        position: relative;
+        background-image: url("../images/topShape.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        padding-bottom: 11%;
+        .quoteIcon {
+            position: absolute;
+            top: 36%;
+            left: 39%;
+            width: 22%;
+        }
+    }
+    p {
+        @include flexBox;
+        font-family: "latoregular";
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 2em;
+    }
+}
