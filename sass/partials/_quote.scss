@@ -6,7 +6,7 @@
 }
 
 .quoteContainer {
-    margin:0;
+    margin:0 auto;
     padding-top: 7%;
     width: 100%;
     @include flexBox;
@@ -14,6 +14,7 @@
     @include flexWrap(wrap);
     @include flexAlignContent(space-between);
     @include flexAlignItems(center);
+    text-align: center;
     // @include flexBox;
     // @include flexDirection(column);
     // @include flexJustify(center);
@@ -37,10 +38,14 @@
         }
     }
     p {
-        @include flexBox;
+        display: inline-block;
         font-family: "latoregular";
-        font-weight: 400;
+        font-weight: 200;
         color: #ffffff;
-        font-size: 2em;
+        font-size: 2.2em;
+        width: 70%;
+        margin: 0;
+        padding: 5%;
+        
     }
 }

@@ -63,6 +63,14 @@
         }
     }
 
+    .skillsContainerOne {
+        .corners {
+            h4 {
+                font-size: 2em;
+            }
+        }
+    }
+
     .teamContainerTwo {
         .teamShapeLeft {
             .teamLeft {
@@ -158,6 +166,15 @@
         }
     }
 
+    .skillsContainerOne {
+        .corners {
+            padding-top: 16%;
+            h4 {
+                font-size: 1.7em;
+            }
+        }
+    }
+
     .teamContainerTwo {
         .teamShapeLeft {
             .teamLeft {
@@ -211,16 +228,22 @@
     }
 
     .quoteContainer {
-        padding-top: 7%;
-        .quoteShape {
-            padding-bottom: 14%;
-        }
         p {
-            font-size: 1.3em;
+            font-size: 1.1em;
+            padding: 0;
         }
     }
 
     .teamContainerOne {
+        .corners {
+            padding-top: 25%;
+            h4 {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .skillsContainerOne {
         .corners {
             padding-top: 25%;
             h4 {

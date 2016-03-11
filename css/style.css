@@ -464,7 +464,7 @@ nav h3 {
 }
 
 .quoteContainer {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 7%;
   width: 100%;
   display: -webkit-flex;
@@ -482,6 +482,7 @@ nav h3 {
   -webkit-align-items: center;
   -moz-webkit-align-items: center;
   align-items: center;
+  text-align: center;
 }
 
 .quoteContainer .quoteShape {
@@ -506,13 +507,14 @@ nav h3 {
 }
 
 .quoteContainer p {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
+  display: inline-block;
   font-family: "latoregular";
-  font-weight: 400;
+  font-weight: 200;
   color: #ffffff;
-  font-size: 2em;
+  font-size: 2.2em;
+  width: 70%;
+  margin: 0;
+  padding: 5%;
 }
 
 .team {
@@ -680,6 +682,9 @@ nav h3 {
   .teamContainerOne .corners h4 {
     font-size: 2em;
   }
+  .skillsContainerOne .corners h4 {
+    font-size: 2em;
+  }
   .teamContainerTwo .teamShapeLeft .teamLeft {
     padding-top: 47%;
   }
@@ -768,6 +773,12 @@ nav h3 {
   .teamContainerOne .corners h4 {
     font-size: 1.7em;
   }
+  .skillsContainerOne .corners {
+    padding-top: 16%;
+  }
+  .skillsContainerOne .corners h4 {
+    font-size: 1.7em;
+  }
   .teamContainerTwo .teamShapeLeft .teamLeft {
     padding-top: 68%;
   }
@@ -805,19 +816,20 @@ nav h3 {
     padding: 6%;
     width: 70%;
   }
-  .quoteContainer {
-    padding-top: 7%;
-  }
-  .quoteContainer .quoteShape {
-    padding-bottom: 14%;
-  }
   .quoteContainer p {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    padding: 0;
   }
   .teamContainerOne .corners {
     padding-top: 25%;
   }
   .teamContainerOne .corners h4 {
+    font-size: 1.5em;
+  }
+  .skillsContainerOne .corners {
+    padding-top: 25%;
+  }
+  .skillsContainerOne .corners h4 {
     font-size: 1.5em;
   }
   .teamContainerTwo .teamShapeLeft .teamLeft {
