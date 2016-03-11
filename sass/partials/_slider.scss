@@ -1,0 +1,30 @@
+.slider {
+	background-color: #eeeeee;
+}
+
+.sliderTop {
+	width: 100%;
+	margin: 0;
+	@include flexBox;
+	@include flexJustify(space-betwween);
+	.sliderData {
+		width: 25%;
+		padding-top: 8%;
+		@include flexBox;
+		@include flexDirection(column);
+		@include flexWrap(wrap);
+		@include flexAlignItems(center);
+		.sliderNumber {
+			font-family: Helvetica;
+			font-size: 3em;
+			padding: 2%;
+			margin: 0;
+		}
+		.bottomText {
+			margin: 0;
+			font-family: Helvetica;
+			font-size: 0.8em;
+			color: #777777;
+		}
+	}
+}

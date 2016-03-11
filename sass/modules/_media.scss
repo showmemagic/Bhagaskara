@@ -187,6 +187,20 @@
             }
         }
     }
+
+    .sliderTop {
+        @include flexDirection(column);
+        @include flexWrap(wrap);
+        .sliderData {
+            width: 100%;
+            padding-top: 3%;
+            @include flexDirection(row);
+            @include flexJustify(center);
+            .bottomText {
+                padding-left: 3%;
+            }
+        }
+    }
  }
 
 @media only screen and (max-width: 450px) {
