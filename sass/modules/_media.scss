@@ -13,6 +13,7 @@
             width: 70%;
         }
     }
+
     .menu {
         li {
             a {
@@ -21,11 +22,13 @@
             }
         }
     }
+
     nav {
         h3 {
             padding-top: 1%;
         }
     }
+
     .aboutUsContainerOne {
         .corners {
             h4 {
@@ -33,6 +36,7 @@
             }
         }
     }
+
     .aboutUsContainerTwo {
         .abouUsText {
             p {
@@ -40,6 +44,7 @@
             }
         }
     }
+
     .quoteContainer {
         padding-top: 7%;
         .quoteShape {
@@ -47,6 +52,27 @@
         }
         p {
             font-size: 1.5em;
+        }
+    }
+
+    .teamContainerOne {
+        .corners {
+            h4 {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .teamContainerTwo {
+        .teamShapeLeft {
+            .teamLeft {
+                padding-top: 47%;
+            }
+        }
+        .teamShapeRight {
+            .teamRight {
+                padding-top: 47%;
+            }
         }
     }
  }
@@ -112,12 +138,35 @@
             }
         }
     }
+
     .quoteContainer {
         padding-top: 7%;
         .quoteShape {
             display: none;
             .quoteIcon {
                 display: none;
+            }
+        }
+    }
+
+    .teamContainerOne {
+        .corners {
+            padding-top: 16%;
+            h4 {
+                font-size: 1.7em;
+            }
+        }
+    }
+
+    .teamContainerTwo {
+        .teamShapeLeft {
+            .teamLeft {
+                padding-top: 68%;
+            }
+        }
+        .teamShapeRight {
+            .teamRight {
+                padding-top: 68%;
             }
         }
     }
@@ -141,14 +190,16 @@
             }
         }
     }
+
     .aboutUsContainerOne {
         .corners {
-            padding-top: 20%;
+            padding-top: 25%;
             h4 {
                 font-size: 1.5em;
             }
         }
     }
+
     .aboutUsContainerTwo {
         @include flexAlignItems(center);
         .abouUsText {
@@ -158,6 +209,7 @@
             }
         }
     }
+
     .quoteContainer {
         padding-top: 7%;
         .quoteShape {
@@ -165,6 +217,30 @@
         }
         p {
             font-size: 1.3em;
+        }
+    }
+
+    .teamContainerOne {
+        .corners {
+            padding-top: 25%;
+            h4 {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .teamContainerTwo {
+        .teamShapeLeft {
+            .teamLeft {
+                padding-top: 68%;
+                padding-bottom: 42%;
+            }
+        }
+        .teamShapeRight {
+            .teamRight {
+                padding-top: 68%;
+                padding-bottom: 42%;
+            }
         }
     }
 }

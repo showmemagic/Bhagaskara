@@ -1,0 +1,27 @@
+.skillsContainerOne {
+    padding-top: 8%;
+        @include flexBox;
+        @include flexJustify(center);
+        .corners {
+            @include flexBox;
+            width: 35%;
+            min-width: 297px;
+            background-image: url("../images/aboutcorners.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            padding-top: 12%;
+            position: relative;
+            text-align: center;
+        }
+        h4 {
+            position: absolute;
+            font-family: "existencelight";
+            display: inline-block;
+            margin: 0;
+            top: 33%;
+            left: 30%;
+            font-size: 2.2em;
+            color: #676767;
+        }
+}
