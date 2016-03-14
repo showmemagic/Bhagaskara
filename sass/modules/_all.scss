@@ -15,4 +15,18 @@ $iconWidth: 100%/6;
     }
 }
 
+@each $media in facebook, twitter, gmail {
+    .#{$media} {
+        display: inline-block;
+        background-image: url("../images/#{$media}.png");
+        width: 60%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 60%;
+        background-position: center;
+        &:hover {
+            background-image: url("../images/#{$media}hover.png");
+        }
+    }
+}
 

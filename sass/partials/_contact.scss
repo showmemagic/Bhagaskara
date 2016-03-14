@@ -1,0 +1,90 @@
+.contactContainerOne {
+    padding-top: 8%;
+        @include flexBox;
+        @include flexJustify(center);
+        .corners {
+            @include flexBox;
+            width: 40%;
+            min-width: 387px;
+            background-image: url("../images/corners2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            padding-top: 12%;
+            position: relative;
+            text-align: center;
+        }
+        h4 {
+            position: absolute;
+            font-family: "existencelight";
+            display: inline-block;
+            margin: 0;
+            top: 33%;
+            left: 28%;
+            font-size: 2.2em;
+            color: #676767;
+        }
+}
+
+.contactContainerTwo {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    @include flexBox;
+    @include flexJustify(space-between);
+    .leftContact {
+        width: 50%;
+        @include flexBox;
+        @include flexJustify(flex-start);
+        @include flexDirection(column);
+
+        input,
+        textarea {
+            width: 100%;
+            margin-top: 4%;
+            padding: 3%;
+            max-width: 518px;
+            @include placeholder {
+                font-family: Helvetica;
+                color: #000000;
+            }
+
+        }
+        .contactButton {
+            width: 40%;
+            padding: 2% 2%;
+            font-family: "latoregular";
+            color: #ffffff;
+            border-radius: 5px;
+            background-color: #9f449b;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.4em;
+            font-weight: 400;
+            box-shadow: 0 5px 1px #6b2e68;
+            border: none;
+        }
+    }
+    .rightContact {
+        width: 50%;
+        font-family: Helvetica;
+        p {
+            color: #4b4b4b;
+            font-size: 1.2em;
+            padding-bottom: 2%;
+        }
+        .bold  {
+            font-weight: bold;
+            color: #000000;
+        }
+        .socialMedia {
+            @include flexBox;
+            @include flexJustify(flex-start);
+            padding-top: 2%;
+            .mediaContent {
+                width: 15%;
+            }
+        }
+    }
+}
+

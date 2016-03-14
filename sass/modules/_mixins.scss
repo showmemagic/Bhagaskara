@@ -42,3 +42,10 @@
 	-moz-align-content: $alignContent;
 	align-content: $alignContent;
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
