@@ -58,9 +58,11 @@
   display: inline-block;
   background-image: url("../images/facebook.png");
   width: 60%;
+  min-width: 48px;
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 60%;
+  padding-top: 22%;
   background-position: center;
 }
 
@@ -72,9 +74,11 @@
   display: inline-block;
   background-image: url("../images/twitter.png");
   width: 60%;
+  min-width: 48px;
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 60%;
+  padding-top: 22%;
   background-position: center;
 }
 
@@ -86,9 +90,11 @@
   display: inline-block;
   background-image: url("../images/gmail.png");
   width: 60%;
+  min-width: 48px;
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 60%;
+  padding-top: 22%;
   background-position: center;
 }
 
@@ -986,6 +992,7 @@ nav h3 {
 .contactContainerTwo .rightContact {
   width: 50%;
   font-family: Helvetica;
+  padding-left: 2%;
 }
 
 .contactContainerTwo .rightContact p {
@@ -1011,6 +1018,13 @@ nav h3 {
 
 .contactContainerTwo .rightContact .socialMedia .mediaContent {
   width: 15%;
+}
+
+h5 {
+  font-family: "existencelight";
+  color: #676767;
+  text-align: center;
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 830px) {
@@ -1072,6 +1086,14 @@ nav h3 {
   }
   .contactContainerOne .corners h4 {
     font-size: 2em;
+  }
+  .contactContainerTwo .rightContact .socialMedia .facebook,
+  .contactContainerTwo .rightContact .socialMedia .twitter,
+  .contactContainerTwo .rightContact .socialMedia .gmail {
+    padding-top: 48%;
+  }
+  .contactContainerTwo .rightContact .socialMedia .mediaContent {
+    margin-right: 3%;
   }
 }
 
@@ -1211,6 +1233,43 @@ nav h3 {
     font-size: 1.7em;
     left: 30%;
   }
+  .contactContainerTwo {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -moz-webkit-align-items: center;
+    align-items: center;
+  }
+  .contactContainerTwo .leftContact {
+    width: 100%;
+  }
+  .contactContainerTwo .leftContact .contactButton {
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    align-self: center;
+  }
+  .contactContainerTwo .rightContact {
+    width: 100%;
+    padding-top: 2%;
+  }
+  .contactContainerTwo .rightContact .socialMedia {
+    -webkit-justify-content: center;
+    -moz-webkit-content: center;
+    justify-content: center;
+  }
+  .contactContainerTwo .rightContact .socialMedia .facebook,
+  .contactContainerTwo .rightContact .socialMedia .twitter,
+  .contactContainerTwo .rightContact .socialMedia .gmail {
+    padding-top: 94%;
+  }
+  .contactContainerTwo .rightContact p {
+    text-align: center;
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1290,5 +1349,14 @@ nav h3 {
   }
   .contactContainerOne .corners h4 {
     font-size: 1.5em;
+  }
+  .contactContainerTwo .rightContact .socialMedia .facebook,
+  .contactContainerTwo .rightContact .socialMedia .twitter,
+  .contactContainerTwo .rightContact .socialMedia .gmail {
+    padding-top: 94%;
+    padding-bottom: 73%;
+  }
+  .contactContainerTwo .rightContact .socialMedia .mediaContent {
+    margin-right: 12%;
   }
 }

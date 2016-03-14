@@ -111,6 +111,22 @@
             }
         }
     }
+
+    .contactContainerTwo {
+        .rightContact {
+            .socialMedia {
+                .facebook,
+                .twitter,
+                .gmail {
+                    padding-top: 48%;
+                }
+                .mediaContent {
+                    margin-right: 3%;
+                }
+            }
+        }
+    }
+    
  }
 
  @media only screen and (max-width: 630px) {
@@ -267,6 +283,37 @@
             }
         }
     }
+
+    .contactContainerTwo {
+        @include flexDirection(column);
+        @include flexWrap(wrap);
+        @include flexAlignItems(center);
+        .leftContact {
+            width: 100%;
+            .contactButton {
+                @include flexAlignSelf(center);
+            }
+        }
+        .rightContact {
+            width: 100%;
+            padding-top: 2%;
+            .socialMedia {
+                @include flexJustify(center);
+                .facebook,
+                .twitter,
+                .gmail {
+                    padding-top: 94%;
+                }
+                .mediaContent {
+                    
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 1em;
+            }
+        }
+    }
  }
 
 @media only screen and (max-width: 450px) {
@@ -386,5 +433,23 @@
             }
         }
     }
+
+    .contactContainerTwo {
+        .rightContact {
+            .socialMedia {
+                .facebook,
+                .twitter,
+                .gmail {
+                    padding-top: 94%;
+                    padding-bottom: 73%;
+                }
+                .mediaContent {
+                    margin-right: 12%;
+                }
+            }
+        }
+    }
+
+    
 }
 

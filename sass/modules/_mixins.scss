@@ -43,6 +43,12 @@
 	align-content: $alignContent;
 }
 
+@mixin flexAlignSelf($alignSelf) {
+	-webkit-align-self: $alignSelf;
+	-moz-align-self: $alignSelf;
+	align-self: $alignSelf;
+}
+
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}
   &:-moz-placeholder           {@content}
