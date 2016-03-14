@@ -83,6 +83,20 @@
             }
         }
     }
+
+    .portfolioContainerOne {
+        .corners {
+            h4 {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .portfolioContainerFour {
+        .portfolioContainerButtons {
+            @include flexJustify(center);
+        }
+    }
  }
 
  @media only screen and (max-width: 630px) {
@@ -201,6 +215,27 @@
             }
         }
     }
+
+    .portfolioContainerOne {
+        .corners {
+            padding-top: 16%;
+            h4 {
+                font-size: 1.7em;
+                left: 30%;
+            }
+        }
+    }
+    .portfolioContainerFour {
+        .portfolioContainerButtons {
+            width: 60%;
+        }
+    }
+
+    .gallery {
+        .photo {
+            width: 45%;
+        }
+    }
  }
 
 @media only screen and (max-width: 450px) {
@@ -277,6 +312,30 @@
             .teamRight {
                 padding-top: 68%;
                 padding-bottom: 42%;
+            }
+        }
+    }
+
+    .portfolioContainerOne {
+        .corners {
+            padding-top: 26%;
+            h4 {
+                font-size: 1.5em;
+            }
+        }
+    }
+    .portfolioContainerFour {
+        .portfolioContainerButtons {
+            width: 100%;
+            padding: 1% 1%;
+        }
+    }
+
+    .gallery {
+        .photo {
+            padding-bottom: 6%;
+            .photoTitle {
+                font-size: 1em;
             }
         }
     }

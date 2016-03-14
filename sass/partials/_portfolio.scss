@@ -1,0 +1,105 @@
+.portfolioContainerOne {
+    padding-top: 8%;
+        @include flexBox;
+        @include flexJustify(center);
+        .corners {
+            @include flexBox;
+            width: 40%;
+            min-width: 387px;
+            background-image: url("../images/corners2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            padding-top: 12%;
+            position: relative;
+            text-align: center;
+        }
+        h4 {
+            position: absolute;
+            font-family: "existencelight";
+            display: inline-block;
+            margin: 0;
+            top: 33%;
+            left: 28%;
+            font-size: 2.2em;
+            color: #676767;
+        }
+    }
+
+.portfolioContainerFour {
+    padding-top: 3%;
+    width: 100%;
+    @include flexBox;
+    @include flexJustify(center);
+    .portfolioContainerButtons {
+        width: 30%;
+        @include flexBox;
+        @include flexJustify(space-between);
+        .portfolioBtn {
+            font-family: Helvetica;
+            text-decoration: none;
+            color: #000000;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            padding: 2% 5%;
+            &:hover {
+                background-color: #9f449b;
+                border-color: #9f449b;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.gallery {
+    padding-top: 5%;
+    width: 100%;
+    @include flexBox;
+    @include flexJustify(space-between);
+    @include flexDirection(row);
+    @include flexWrap(wrap);
+    .photo {
+        width: 30%;
+        padding-bottom: 3%;
+        text-align: center;
+        font-family: Helvetica;
+        img {
+            width: 100%;
+        }
+        .photoTitle {
+            margin: 0;
+            font-size: 1.2em;
+            padding-top: 3%;
+            text-transform: capitalize;
+        }
+        .tags {
+            color: #777777;
+            font-size: 0.9em;
+            margin: 0;
+            padding-top: 2%;
+        }
+    }
+}
+
+.moreBtn {
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    @include flexBox;
+    @include flexJustify(center);
+    a {
+        width: 20%;
+        padding: 1% 2%;
+        font-family: "latoregular";
+        color: #ffffff;
+        border-radius: 5px;
+        background-color: #9f449b;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 1.4em;
+        font-weight: 400;
+        box-shadow: 0 5px 1px #6b2e68;
+    }
+}
