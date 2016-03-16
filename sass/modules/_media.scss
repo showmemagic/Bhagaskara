@@ -314,9 +314,64 @@
             }
         }
     }
+
+    nav {
+        position: relative;
+        padding: 0;
+    }
+
+    .hamburger {
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        color: #676767;
+        font-family: "latoregular";
+        font-weight: 400;
+        font-size: 1.6em;
+        line-height: 1em;
+        padding: 2%;
+    }
+    .menu {
+        float: none;
+        position: absolute;
+        top: 70%;
+        left: 48%;
+        padding: 0;
+        li {
+             display: block;
+             text-align: center;
+             background-color: white;
+             padding: 2%;
+             a {
+                padding: 2%;
+                font-size: 1.3em;
+             }
+        }
+    }
  }
 
 @media only screen and (max-width: 450px) {
+    header {
+        p {
+            display: none;
+        }
+    }
+
+    nav {
+        h3 {
+            padding-top: 0;
+        }
+    }
+
+    .hamburger {
+        padding: 0;
+    }
+
+    .menu {
+        top: 100%;
+        left: 48%;
+    }
+
     .contentContainerFour {
         .contentShape {
             .buildIcon,
