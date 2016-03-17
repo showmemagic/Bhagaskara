@@ -276,6 +276,11 @@ header p {
   left: 39%;
 }
 
+.shapeContainerFour .shapeSide .shape .contactIcon {
+  width: 27%;
+  left: 34%;
+}
+
 .shapeContainerOne {
   width: 100%;
   text-align: center;
@@ -1022,6 +1027,10 @@ nav h3 {
 
 .contactContainerTwo .rightContact .socialMedia .mediaContent {
   width: 15%;
+}
+
+.invalid {
+  border: 2px solid red;
 }
 
 h5 {

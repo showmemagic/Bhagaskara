@@ -38,25 +38,68 @@ $(document).ready(function() {
     toggleMenu();
 
     function checkForm() {
-        var form = document.getElementsByTagName("form")[0];
-        var nameInput = document.getElementById("name");
-        var emailInput = document.getElementById("email");
+        var form = $("form");
+        var nameInput = $("#name");
+        var emailInput = $("#email");
+        var messageInput = $("#message");
+        
+        
+        $(nameInput).on("blur", function(event) {
+            var input = $(this);
+            var name = $(nameInput).val();
 
-        form.addEventListener("submit", function(event){
-            var name = nameInput.value;
-            var email = emailInput.value;
-
-            if(email.indexOf("@")===-1){
-                console.log("Zły mail");
-                event.preventDefault();
+            if(name.length <= 3){
+                input.addClass("invalid");
+                $(this).attr("placeholder", "Incorrect name");
             }
-            if(name.length < 3) {
-                console.log("Zły name");
-                event.preventDefault();
+            else {
+                input.removeClass("invalid");
             }
         });
-    }
+
+        $(emailInput).on("blur", function(event) {
+            var input = $(this);
+            var email = $(emailInput).val();
+            var sings = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})+$/;
+            var isEmail = sings.test(email);
+            var message = $(messageInput).val();
+            if (isEmail === false) {
+                input.addClass("invalid");
+                $(this).attr("placeholder", "Incorrect email");
+            }
+            else {
+                input.removeClass("invalid");
+            }
+        });
+
+        $(messageInput).on("blur", function(event) {
+            var input = $(this);
+            
+
+            if(message.length < 10) {
+                input.addClass("invalid");
+                $(this).attr("placeholder", "Please, type your message");
+            }
+            else {
+                input.removeClass("invalid");
+            }
+        });
+
+        $(form).on("submit", function(event){
+            var name = $(nameInput).val();
+            var email = $(emailInput).val();
+            var message = $(messageInput).val();
+            
+            if (nameInput.hasClass("invalid") || emailInput.hasClass("invalid") || messageInput.hasClass("invalid") || name.length === 0 || email.length === 0 || message.length === 0) {
+                event.preventDefault();
+                alert("Please, fill in all the fields or check your submission.")
+            }
+        });
+
+    } 
 
     checkForm();
+
+    
 
 });
