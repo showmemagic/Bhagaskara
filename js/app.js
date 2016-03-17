@@ -37,4 +37,26 @@ $(document).ready(function() {
 
     toggleMenu();
 
+    function checkForm() {
+        var form = document.getElementsByTagName("form")[0];
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+
+        form.addEventListener("submit", function(event){
+            var name = nameInput.value;
+            var email = emailInput.value;
+
+            if(email.indexOf("@")===-1){
+                console.log("Zły mail");
+                event.preventDefault();
+            }
+            if(name.length < 3) {
+                console.log("Zły name");
+                event.preventDefault();
+            }
+        });
+    }
+
+    checkForm();
+
 });
