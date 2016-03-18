@@ -13,6 +13,7 @@ $(document).ready(function() {
         }
     }
 
+//*****************************HAMBURGER MENU********************************//
     function toggleMenu() {
         var hamburger = $(".hamburger");
         var menu = $(".menu");
@@ -35,8 +36,8 @@ $(document).ready(function() {
             changeWidth(mq);
         }
 
-    toggleMenu();
-
+    
+//******************************VLIDATE INPUT********************************//
     function checkForm() {
         var form = $("form");
         var nameInput = $("#name");
@@ -98,7 +99,28 @@ $(document).ready(function() {
 
     } 
 
+//*********************************HEADER ICONS*******************************//
+
+function scrollDown() {
+        var body = $("body");
+        var links = $(".shape").find("a");
+        var bottomLink = $(".littleShape").find("a");
+
+        links.click(function(event) {
+            body.animate({scrollTop: $($(this).attr("href")).offset().top}, "slow");
+            event.preventDefault();
+        });
+
+        bottomLink.click(function(event) {
+            body.animate({scrollTop: $($(this).attr("href")).offset().top}, "slow");
+            event.preventDefault();
+        })
+
+}
+
+    toggleMenu();
     checkForm();
+    scrollDown();
 
     
 
