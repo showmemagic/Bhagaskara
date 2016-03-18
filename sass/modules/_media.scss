@@ -23,7 +23,7 @@
         }
     }
 
-    nav {
+    .navContainer {
         h3 {
             padding-top: 1%;
         }
@@ -52,6 +52,7 @@
         }
         p {
             font-size: 1.5em;
+            padding: 0;
         }
     }
 
@@ -320,6 +321,12 @@
         padding: 0;
     }
 
+    .navContainer {
+        h3 {
+            display: none;
+        }
+    }
+
     .hamburger {
         display: block;
         text-transform: uppercase;
@@ -330,20 +337,24 @@
         font-size: 1.6em;
         line-height: 1em;
         padding: 2%;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .menu {
+        width: 100%;
         float: none;
         position: absolute;
         top: 70%;
-        left: 48%;
         padding: 0;
         li {
              display: block;
              text-align: center;
              background-color: white;
              padding: 2%;
+             border-bottom: 1px solid #676767;
              a {
-                padding: 2%;
+                padding: 4%;
                 font-size: 1.3em;
              }
         }
@@ -357,7 +368,7 @@
         }
     }
 
-    nav {
+    .navContainer {
         h3 {
             padding-top: 0;
         }

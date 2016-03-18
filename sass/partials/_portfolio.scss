@@ -1,5 +1,8 @@
+.portfolio {
+    padding-top: 10%;
+}
+
 .portfolioContainerOne {
-    padding-top: 8%;
         @include flexBox;
         @include flexJustify(center);
         .corners {

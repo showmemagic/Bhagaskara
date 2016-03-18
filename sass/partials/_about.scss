@@ -1,9 +1,9 @@
 .about {
     background-color: #ffffff;
+    padding-top: 10%;
 }
 
 .aboutUsContainerOne {
-    padding-top: 8%;
         @include flexBox;
         @include flexJustify(center);
         .corners {

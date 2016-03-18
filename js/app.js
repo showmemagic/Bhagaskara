@@ -101,27 +101,71 @@ $(document).ready(function() {
 
 //*********************************HEADER ICONS*******************************//
 
-function scrollDown() {
-        var body = $("body");
-        var links = $(".shape").find("a");
-        var bottomLink = $(".littleShape").find("a");
+    function scrollDown() {
+            var body = $("body");
+            var links = $(".shape").find("a");
+            var bottomLink = $(".littleShape").find("a");
 
-        links.click(function(event) {
-            body.animate({scrollTop: $($(this).attr("href")).offset().top}, "slow");
-            event.preventDefault();
+            links.click(function(event) {
+                body.animate({
+                    scrollTop: $($(this).attr("href")).offset().top}, "slow");
+                event.preventDefault();
+            });
+
+            bottomLink.click(function(event) {
+                body.animate({
+                    scrollTop: $($(this).attr("href")).offset().top}, "slow");
+                event.preventDefault();
+            });
+
+    }
+
+//*****************************STICKY MENU***********************************//
+
+    function stickyMenu() {
+        var navElement = $("nav").find(".navContainer");
+        var navTop = navElement.offset().top;
+
+        function setSticky() {
+            var windowScroll = $(window).scrollTop();
+            if (windowScroll > navTop) {
+                navElement.addClass("sticky");
+            }
+            else {
+                navElement.removeClass("sticky");
+            }
+        }
+
+        $(window).scroll(function(event) {
+            setSticky();
         });
 
-        bottomLink.click(function(event) {
-            body.animate({scrollTop: $($(this).attr("href")).offset().top}, "slow");
-            event.preventDefault();
-        })
+        $(window).resize(function(event) {
+            navTop = navElement.offset().top;
+            setSticky();
+        
+        });
+    }
+//**********************************MENU SLIDE*******************************//
 
-}
+    function menuScroll() {
+            var body = $("body");
+            var links = $(".menu").find("a");
+
+            links.click(function(event) {
+                body.animate({
+                    scrollTop: $($(this).attr("href")).offset().top}, "slow");
+                event.preventDefault();
+            });
+
+    }
+
 
     toggleMenu();
     checkForm();
     scrollDown();
-
+    stickyMenu();
+    menuScroll();
     
 
 });

@@ -321,10 +321,10 @@ header p {
 
 nav {
   background-color: #ffffff;
-  padding-bottom: 7%;
+  padding-bottom: 5%;
 }
 
-nav h3 {
+.navContainer h3 {
   font-family: "existencelight";
   display: inline-block;
   float: left;
@@ -363,14 +363,23 @@ nav h3 {
   display: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  z-index: 20;
+}
+
 .content {
   background-color: #eeeeee;
+  padding-top: 10%;
 }
 
 .contentContainerFour {
   width: 100%;
   margin: 0;
-  padding-top: 7%;
   padding-bottom: 10%;
   display: -webkit-flex;
   display: -moz-flex;
@@ -410,10 +419,10 @@ nav h3 {
 
 .about {
   background-color: #ffffff;
+  padding-top: 10%;
 }
 
 .aboutUsContainerOne {
-  padding-top: 8%;
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -571,15 +580,15 @@ nav h3 {
   font-size: 2.2em;
   width: 70%;
   margin: 0;
-  padding: 5%;
+  padding: 2%;
 }
 
 .team {
   background-color: #ffffff;
+  padding-top: 10%;
 }
 
 .teamContainerOne {
-  padding-top: 8%;
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -704,6 +713,7 @@ nav h3 {
 
 .slider {
   background-color: #eeeeee;
+  padding-top: 10%;
 }
 
 .sliderTop {
@@ -719,7 +729,6 @@ nav h3 {
 
 .sliderTop .sliderData {
   width: 25%;
-  padding-top: 8%;
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -748,8 +757,11 @@ nav h3 {
   color: #777777;
 }
 
+.portfolio {
+  padding-top: 10%;
+}
+
 .portfolioContainerOne {
-  padding-top: 8%;
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -890,8 +902,11 @@ nav h3 {
   box-shadow: 0 5px 1px #6b2e68;
 }
 
+.contact {
+  padding-top: 10%;
+}
+
 .contactContainerOne {
-  padding-top: 8%;
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -1056,7 +1071,7 @@ h5 {
     padding-right: 15%;
     font-size: 0.8em;
   }
-  nav h3 {
+  .navContainer h3 {
     padding-top: 1%;
   }
   .aboutUsContainerOne .corners h4 {
@@ -1073,6 +1088,7 @@ h5 {
   }
   .quoteContainer p {
     font-size: 1.5em;
+    padding: 0;
   }
   .teamContainerOne .corners h4 {
     font-size: 2em;
@@ -1287,6 +1303,9 @@ h5 {
     position: relative;
     padding: 0;
   }
+  .navContainer h3 {
+    display: none;
+  }
   .hamburger {
     display: block;
     text-transform: uppercase;
@@ -1298,11 +1317,14 @@ h5 {
     line-height: 1em;
     padding: 2%;
   }
+  .hamburger:hover {
+    cursor: pointer;
+  }
   .menu {
+    width: 100%;
     float: none;
     position: absolute;
     top: 70%;
-    left: 48%;
     padding: 0;
   }
   .menu li {
@@ -1310,9 +1332,10 @@ h5 {
     text-align: center;
     background-color: white;
     padding: 2%;
+    border-bottom: 1px solid #676767;
   }
   .menu li a {
-    padding: 2%;
+    padding: 4%;
     font-size: 1.3em;
   }
 }
@@ -1321,7 +1344,7 @@ h5 {
   header p {
     display: none;
   }
-  nav h3 {
+  .navContainer h3 {
     padding-top: 0;
   }
   .hamburger {

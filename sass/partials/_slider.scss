@@ -1,5 +1,6 @@
 .slider {
 	background-color: #eeeeee;
+	padding-top: 10%;
 }
 
 .sliderTop {
@@ -9,7 +10,6 @@
 	@include flexJustify(space-betwween);
 	.sliderData {
 		width: 25%;
-		padding-top: 8%;
 		@include flexBox;
 		@include flexDirection(column);
 		@include flexWrap(wrap);

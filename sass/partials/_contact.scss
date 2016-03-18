@@ -1,5 +1,8 @@
+.contact {
+    padding-top: 10%;
+}
+
 .contactContainerOne {
-    padding-top: 8%;
         @include flexBox;
         @include flexJustify(center);
         .corners {
