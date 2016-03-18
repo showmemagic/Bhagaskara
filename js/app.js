@@ -123,7 +123,7 @@ $(document).ready(function() {
 //*****************************STICKY MENU***********************************//
 
     function stickyMenu() {
-        var navElement = $("nav").find(".navContainer");
+        var navElement = $("nav");
         var navTop = navElement.offset().top;
 
         function setSticky() {
