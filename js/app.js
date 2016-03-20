@@ -96,21 +96,21 @@ $(document).ready(function() {
 //*********************************HEADER ICONS*******************************//
 
     function scrollDown() {
-            var body = $("body");
-            var links = $(".shape").find("a");
-            var bottomLink = $(".littleShape").find("a");
+        var body = $("body");
+        var links = $(".shape").find("a");
+        var bottomLink = $(".littleShape").find("a");
 
-            links.click(function(event) {
-                body.animate({
-                    scrollTop: $($(this).attr("href")).offset().top}, "slow");
-                event.preventDefault();
-            });
+        links.click(function(event) {
+            body.animate({
+                scrollTop: $($(this).attr("href")).offset().top}, "slow");
+            event.preventDefault();
+        });
 
-            bottomLink.click(function(event) {
-                body.animate({
-                    scrollTop: $($(this).attr("href")).offset().top}, "slow");
-                event.preventDefault();
-            });
+        bottomLink.click(function(event) {
+            body.animate({
+                scrollTop: $($(this).attr("href")).offset().top}, "slow");
+            event.preventDefault();
+        });
 
     }
 
@@ -144,23 +144,61 @@ $(document).ready(function() {
 //**********************************MENU SLIDE*******************************//
 
     function menuScroll() {
-            var body = $("body");
-            var links = $(".menu").find("a");
+        var body = $("body");
+        var links = $(".menu").find("a");
 
-            links.click(function(event) {
-                body.animate({
-                    scrollTop: $($(this).attr("href")).offset().top}, "slow");
-                event.preventDefault();
-            });
+        links.click(function(event) {
+            body.animate({
+                scrollTop: $($(this).attr("href")).offset().top}, "slow");
+            event.preventDefault();
+        });
 
     }
 
+//********************************GALLERY HOVER******************************//
+
+    function photoHover() {
+        var photo = $(".gallery").find("img");
+
+        photo.on("mouseenter", function(event) {
+            $(this).css("cursor", "pointer");
+            $(this).addClass("gray");
+            $(this).prev().children(".cross").fadeIn("slow");
+            // cross.fadeIn(200);
+        });
+        photo.on("mouseleave", function(event) {
+            $(this).css("cursor", "default");
+            $(this).removeClass("gray");
+            $(this).prev().children(".cross").fadeOut("slow");
+            // cross.fadeOut(200);
+        })
+    }
+
+//***************************GALLERY ZOOM IMAGES******************************//
+    function zoomImages() {
+        var ovr = $('#overlay');
+        var photo = $(".gallery").find("img");
+
+        photo.on("click", function(){  
+            ovr.fadeTo(600,1).css({
+                backgroundImage:"url("+this.src+")"
+            });  
+        });
+        ovr.on("click", function(){
+            $(this).stop().fadeTo(600,0,function(){
+                $(this).hide();
+            });
+        });
+    }
+
+    
 
     toggleMenu();
     checkForm();
     scrollDown();
     stickyMenu();
     menuScroll();
-    
+    photoHover();
+    zoomImages();
 
 });

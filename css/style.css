@@ -855,6 +855,38 @@ nav {
   padding-bottom: 3%;
   text-align: center;
   font-family: Helvetica;
+  position: relative;
+}
+
+.gallery .photo .crossContainer {
+  position: absolute;
+  top: 26%;
+  width: 100%;
+}
+
+.gallery .photo .crossContainer .cross {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.gallery .photo .crossContainer .cross:before, .gallery .photo .crossContainer .cross:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background: #ffffff;
+}
+
+.gallery .photo .crossContainer .cross:before {
+  width: 3px;
+  padding-top: 40%;
+}
+
+.gallery .photo .crossContainer .cross:after {
+  left: 30%;
+  margin-top: 20%;
+  width: 40%;
+  height: 3px;
 }
 
 .gallery .photo img {
@@ -873,6 +905,26 @@ nav {
   font-size: 0.9em;
   margin: 0;
   padding-top: 2%;
+}
+
+.gray {
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .moreBtn {

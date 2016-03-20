@@ -55,3 +55,9 @@
   &::-moz-placeholder          {@content}
   &:-ms-input-placeholder      {@content}  
 }
+
+@mixin grayscale($gray) {
+	-webkit-filter: grayscale($gray);
+	-moz-filter: grayscale($gray);
+	filter: grayscale($gray);
+}

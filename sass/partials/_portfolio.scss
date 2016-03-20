@@ -67,6 +67,34 @@
         padding-bottom: 3%;
         text-align: center;
         font-family: Helvetica;
+        position: relative;
+        .crossContainer {
+            position: absolute;
+            top: 26%;
+            width: 100%;
+            .cross {
+                width: 100%;
+                position: relative;
+                display: none;
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    z-index: 1;
+                    background: #ffffff;
+                }
+                &:before {
+                    width: 3px;
+                    padding-top: 40%;
+                }
+                &:after {
+                    left: 30%;
+                    margin-top: 20%;
+                    width: 40%;
+                    height: 3px;
+                }
+            }
+        }
         img {
             width: 100%;
         }
@@ -83,6 +111,23 @@
             padding-top: 2%;
         }
     }
+}
+
+.gray {
+    @include grayscale(50%);
+}
+
+#overlay{
+  display:none;
+  position:fixed;
+  top:0; 
+  left:0;
+  width:100%; height:100%;
+  background-color:rgba(0,0,0,0.4);
+  background-repeat:no-repeat;
+  background-position: center center;
+  cursor:pointer;
+  z-index: 10;
 }
 
 .moreBtn {
