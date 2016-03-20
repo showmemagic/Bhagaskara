@@ -4,13 +4,7 @@ $(document).ready(function() {
         mq.addListener(changeWidth);
         changeWidth(mq);
 
-        function changeWidth(mq) {
-            if(mq.matches) {
-                console.log('yes')
-            } else {
-                console.log('no');
-            }
-        }
+        
     }
 
 //*****************************HAMBURGER MENU********************************//
@@ -124,15 +118,16 @@ $(document).ready(function() {
 
     function stickyMenu() {
         var navElement = $("nav");
+        var stickyElement = navElement.find(".navContainer")
         var navTop = navElement.offset().top;
 
         function setSticky() {
             var windowScroll = $(window).scrollTop();
             if (windowScroll > navTop) {
-                navElement.addClass("sticky");
+                stickyElement.addClass("sticky");
             }
             else {
-                navElement.removeClass("sticky");
+                stickyElement.removeClass("sticky");
             }
         }
 
