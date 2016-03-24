@@ -164,13 +164,11 @@ $(document).ready(function() {
             $(this).css("cursor", "pointer");
             $(this).addClass("gray");
             $(this).prev().children(".cross").fadeIn("slow");
-            // cross.fadeIn(200);
         });
         photo.on("mouseleave", function(event) {
             $(this).css("cursor", "default");
             $(this).removeClass("gray");
             $(this).prev().children(".cross").fadeOut("slow");
-            // cross.fadeOut(200);
         })
     }
 
@@ -192,6 +190,38 @@ $(document).ready(function() {
     }
 
     
+//****************************GALLERY LOAD MORE IMAGES***********************//
+    function loadImages() {
+        $(".gallery .photo:lt(6)").show();
+        var items =  15;
+        var shown =  6;
+        $("#showMore").click(function () {
+            event.preventDefault();
+            $("#showLess").css("display", "flex");
+            shown = $(".gallery .photo:visible").size()+2;
+            if(shown < items) {
+                $(".gallery .photo:lt("+shown+")").show();
+            }
+            else {
+                $(".gallery .photo:lt("+items+")").show();
+                $("#showMore").hide();
+            }
+        });
+
+        $("#showLess").click(function () {
+            $(".gallery .photo").not(":lt(6)").hide();
+            $("#showLess").hide();
+            event.preventDefault();
+        });
+    }
+
+//*********************************MIXITUP*********************************//
+
+    $(function(){
+        $("#imageGallery").mixItUp();
+        $("#imageGallery").mixItUp("filter", ".initial");
+    });
+
 
     toggleMenu();
     checkForm();
@@ -200,5 +230,6 @@ $(document).ready(function() {
     menuScroll();
     photoHover();
     zoomImages();
+    loadImages();
 
 });

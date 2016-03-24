@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src = "./js/app.js" text = "text/javascript"></script>
+        <script src = "./js/jquery.mixitup.js" text = "text/javascript"></script>
     </head>
     <body>
 
@@ -220,65 +221,140 @@
                 </div>
                 <div class = "portfolioContainerFour">
                     <div class = "portfolioContainerButtons">
-                        <a href = "#" class = "portfolioBtn">all</a>
-                        <a href = "#" class = "portfolioBtn">web</a>
-                        <a href = "#" class = "portfolioBtn">apps</a>
-                        <a href = "#" class = "portfolioBtn">icons</a>
+                        <a class = "portfolioBtn filter" data-filter=".all">all</a>
+                        <a class = "portfolioBtn filter" data-filter=".web">web</a>
+                        <a class = "portfolioBtn filter" data-filter=".apps">apps</a>
+                        <a class = "portfolioBtn filter" data-filter=".icons">icons</a>
                     </div>
                 </div>
-                <div class = "gallery">
+                <div class = "gallery" id = "imageGallery">
                     <div id = "overlay"></div>
-                    <div class = "photo">
+                    <div class = "photo initial mix all icons web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
                         <img src = "images/Img1.png" alt = "photo title">
                         <p class = "photoTitle">neque porro quisquam</p>
-                        <p class = "tags">apps, icons, ui</p>
+                        <p class = "tags">icons, web</p>
                     </div>
-                    <div class = "photo">
+                    <div class = "photo initial mix all icons web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
                         <img src = "images/Img2.png" alt = "photo tite">
                         <p class = "photoTitle">neque porro quisquam</p>
-                        <p class = "tags">apps, icons, ui</p>
+                        <p class = "tags">icons, web</p>
                     </div>
-                    <div class = "photo">
+                    <div class = "photo initial mix all apps web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
                         <img src = "images/Img3.png" alt = "photo title">
                         <p class = "photoTitle">neque porro quisquam</p>
-                        <p class = "tags">apps, icons, ui</p>
+                        <p class = "tags">apps, web</p>
                     </div>
-                    <div class = "photo">
+                    <div class = "photo initial mix all apps icons web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
                         <img src = "images/Img4.png" alt = "photo title">
                         <p class = "photoTitle">neque porro quisquam</p>
-                        <p class = "tags">apps, icons, ui</p>
+                        <p class = "tags">apps, icons, web</p>
                     </div>
-                    <div class = "photo">
+                    <div class = "photo initial mix all apps icons web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
                         <img src = "images/Img5.png" alt = "photo title">
                         <p class = "photoTitle">neque porro quisquam</p>
-                        <p class = "tags">apps, icons, ui</p>
+                        <p class = "tags">apps, icons, web</p>
                     </div>
-                    <div class = "photo">
+                    <div class = "photo initial mix all apps web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
                         <img src = "images/Img6.png" alt = "photo title">
                         <p class = "photoTitle">neque porro quisquam</p>
-                        <p class = "tags">apps, icons, ui</p>
+                        <p class = "tags">apps, web</p>
+                    </div>
+                    <div class = "photo mix all icons web">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img7.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">icons, web</p>
+                    </div>
+                    <div class = "photo mix all apps icons web">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img8.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">apps, icons, web</p>
+                    </div>
+                    <div class = "photo mix all icons web">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img9.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">icons, web</p>
+                    </div>
+                    <div class = "photo mix all apps icons">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img10.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">apps, icons</p>
+                    </div>
+                    <div class = "photo mix all apps icons">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img11.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">apps, icons</p>
+                    </div>
+                    <div class = "photo mix all apps icons web">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img12.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">apps, icons, web</p>
+                    </div>
+                    <div class = "photo mix all apps icons web">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img13.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">apps, icons, web</p>
+                    </div>
+                    <div class = "photo mix all apps icons web">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img14.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">apps, icons, web</p>
+                    </div>
+                    <div class = "photo mix all apps icons web">
+                        <div class = "crossContainer">
+                            <div class = "cross"></div>
+                        </div>
+                        <img src = "images/Img15.png" alt = "photo title">
+                        <p class = "photoTitle">neque porro quisquam</p>
+                        <p class = "tags">apps, icons, web</p>
                     </div>
                 </div>
-                <div class = "moreBtn">
+                <div class = "moreBtn" id = "showMore">
                     <a href = "#">Watch more</a>
+                </div>
+                <div class = "lessBtn" id = "showLess">
+                    <a href = "#">Show less</a>
                 </div>
             </div>
         </section>

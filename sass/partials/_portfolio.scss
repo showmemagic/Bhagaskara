@@ -50,6 +50,7 @@
                 background-color: #9f449b;
                 border-color: #9f449b;
                 color: #ffffff;
+                cursor: pointer;
             }
         }
     }
@@ -59,12 +60,15 @@
     padding-top: 5%;
     width: 100%;
     @include flexBox;
-    @include flexJustify(space-between);
+    @include flexJustify(justify);
     @include flexDirection(row);
     @include flexWrap(wrap);
     .photo {
+        display: none;
         width: 30%;
         padding-bottom: 3%;
+        margin-right: 1%;
+        margin-left: 2%;
         text-align: center;
         font-family: Helvetica;
         position: relative;
@@ -113,6 +117,10 @@
     }
 }
 
+#imageGallery .mix {
+    display: none;
+}
+
 .gray {
     @include grayscale(50%);
 }
@@ -130,10 +138,10 @@
   z-index: 10;
 }
 
-.moreBtn {
+.moreBtn,
+.lessBtn {
     margin: 0;
     padding-top: 5%;
-    padding-bottom: 5%;
     width: 100%;
     @include flexBox;
     @include flexJustify(center);
@@ -150,4 +158,8 @@
         font-weight: 400;
         box-shadow: 0 5px 1px #6b2e68;
     }
+}
+
+.lessBtn {
+    display: none;
 }
