@@ -41,11 +41,10 @@
         .portfolioBtn {
             font-family: Helvetica;
             text-decoration: none;
-            color: #000000;
             text-transform: uppercase;
             border-radius: 5px;
             border: 1px solid #000000;
-            padding: 2% 5%;
+            padding: 2% 4%;
             &:hover {
                 background-color: #9f449b;
                 border-color: #9f449b;
@@ -54,6 +53,12 @@
             }
         }
     }
+}
+
+.active {
+    background-color: #9f449b;
+    border-color: #9f449b !important;
+    color: #ffffff;
 }
 
 .gallery {

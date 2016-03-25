@@ -820,11 +820,10 @@ nav {
 .portfolioContainerFour .portfolioContainerButtons .portfolioBtn {
   font-family: Helvetica;
   text-decoration: none;
-  color: #000000;
   text-transform: uppercase;
   border-radius: 5px;
   border: 1px solid #000000;
-  padding: 2% 5%;
+  padding: 2% 4%;
 }
 
 .portfolioContainerFour .portfolioContainerButtons .portfolioBtn:hover {
@@ -832,6 +831,12 @@ nav {
   border-color: #9f449b;
   color: #ffffff;
   cursor: pointer;
+}
+
+.active {
+  background-color: #9f449b;
+  border-color: #9f449b !important;
+  color: #ffffff;
 }
 
 .gallery {

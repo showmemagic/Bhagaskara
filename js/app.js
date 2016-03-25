@@ -163,12 +163,12 @@ $(document).ready(function() {
         photo.on("mouseenter", function(event) {
             $(this).css("cursor", "pointer");
             $(this).addClass("gray");
-            $(this).prev().children(".cross").fadeIn("slow");
+            $(this).prev().children(".cross").show();
         });
         photo.on("mouseleave", function(event) {
             $(this).css("cursor", "default");
             $(this).removeClass("gray");
-            $(this).prev().children(".cross").fadeOut("slow");
+            $(this).prev().children(".cross").hide();
         })
     }
 
@@ -211,16 +211,67 @@ $(document).ready(function() {
         $("#showLess").click(function () {
             $(".gallery .photo").not(":lt(6)").hide();
             $("#showLess").hide();
+            $("#showMore").show();
             event.preventDefault();
         });
     }
 
-//*********************************MIXITUP*********************************//
+//*********************************GALLERY FILTER****************************//
 
-    $(function(){
-        $("#imageGallery").mixItUp();
-        $("#imageGallery").mixItUp("filter", ".initial");
-    });
+    function filterImages() {
+        
+        var imgs = $(".gallery").find(".photo");
+        var buttons = $(".portfolioButtons");
+        var tagged = {};
+        // var shown = $(".gallery .photo:visible").size();
+
+        imgs.each(function() {
+            var img = this;
+            var tags = $(this).data("tags");
+
+            if (tags) {
+                tags.split(",").forEach(function(tagName) {
+                    if (tagged[tagName] == null) {
+                        tagged[tagName] = [];
+                    }
+                    tagged[tagName].push(img);
+                });
+            }
+        });
+
+        $("<a>", {
+            text: "all" + "("+imgs.size()+")",
+            class: "portfolioBtn",
+            click: function() {
+                $(this)
+                    .addClass("active")
+                    .siblings()
+                    .removeClass("active");
+                imgs.fadeIn("slow");
+            }
+        }).appendTo(buttons);
+
+        $.each(tagged, function(tagName) {
+            var numb = $(tagged[tagName]).length;
+            $("<a>", {
+                text: tagName + "("+numb+")",
+                class: "portfolioBtn",
+                click: function() {
+                    $(this)
+                        .addClass("active")
+                        .siblings()
+                        .removeClass("active");
+                    imgs
+                        .fadeOut("slow")
+                        .filter(tagged[tagName])
+                        .fadeIn("slow");
+                    $("#showMore").hide();
+                }
+            }).appendTo(buttons);
+        });
+
+
+    }
 
 
     toggleMenu();
@@ -231,5 +282,6 @@ $(document).ready(function() {
     photoHover();
     zoomImages();
     loadImages();
+    filterImages();
 
 });

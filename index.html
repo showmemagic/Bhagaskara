@@ -212,7 +212,7 @@
             </div>
         </section>
 
-        <section class = "portfolio" id = "portfolio">
+        <section class = "portfolio">
             <div class = "mainWidth">
                 <div class = "portfolioContainerOne">
                     <div class = "corners">
@@ -220,16 +220,16 @@
                     </div>
                 </div>
                 <div class = "portfolioContainerFour">
-                    <div class = "portfolioContainerButtons">
-                        <a class = "portfolioBtn filter" data-filter=".all">all</a>
-                        <a class = "portfolioBtn filter" data-filter=".web">web</a>
-                        <a class = "portfolioBtn filter" data-filter=".apps">apps</a>
-                        <a class = "portfolioBtn filter" data-filter=".icons">icons</a>
+                    <div class = "portfolioContainerButtons portfolioButtons">
+                        <!-- <a class = "portfolioBtn" data-filter = "all">all</a>
+                        <a class = "portfolioBtn" data-filter = "web">web</a>
+                        <a class = "portfolioBtn" data-filter = "apps">apps</a>
+                        <a class = "portfolioBtn" data-filter = "icons">icons</a> -->
                     </div>
                 </div>
-                <div class = "gallery" id = "imageGallery">
+                <div class = "gallery">
                     <div id = "overlay"></div>
-                    <div class = "photo initial mix all icons web">
+                    <div class = "photo" data-tags = "icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -237,7 +237,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">icons, web</p>
                     </div>
-                    <div class = "photo initial mix all icons web">
+                    <div class = "photo" data-tags = "icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -245,7 +245,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">icons, web</p>
                     </div>
-                    <div class = "photo initial mix all apps web">
+                    <div class = "photo" data-tags = "apps,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -253,7 +253,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, web</p>
                     </div>
-                    <div class = "photo initial mix all apps icons web">
+                    <div class = "photo" data-tags = "apps,icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -261,7 +261,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, icons, web</p>
                     </div>
-                    <div class = "photo initial mix all apps icons web">
+                    <div class = "photo" data-tags = "apps,icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -269,7 +269,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, icons, web</p>
                     </div>
-                    <div class = "photo initial mix all apps web">
+                    <div class = "photo" data-tags = "apps,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -277,7 +277,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, web</p>
                     </div>
-                    <div class = "photo mix all icons web">
+                    <div class = "photo" data-tags = "icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -285,7 +285,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">icons, web</p>
                     </div>
-                    <div class = "photo mix all apps icons web">
+                    <div class = "photo" data-tags = "apps,icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -293,7 +293,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, icons, web</p>
                     </div>
-                    <div class = "photo mix all icons web">
+                    <div class = "photo" data-tags = "icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -301,7 +301,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">icons, web</p>
                     </div>
-                    <div class = "photo mix all apps icons">
+                    <div class = "photo" data-tags = "apps,icons">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -309,7 +309,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, icons</p>
                     </div>
-                    <div class = "photo mix all apps icons">
+                    <div class = "photo" data-tags = "apps,icons">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -317,15 +317,15 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, icons</p>
                     </div>
-                    <div class = "photo mix all apps icons web">
-                        <div class = "crossContainer">
+                    <div class = "photo">
+                        <div class = "crossContainer" data-tags = "apps,icons,web">
                             <div class = "cross"></div>
                         </div>
                         <img src = "images/Img12.png" alt = "photo title">
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, icons, web</p>
                     </div>
-                    <div class = "photo mix all apps icons web">
+                    <div class = "photo" data-tags = "apps,icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -333,7 +333,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, icons, web</p>
                     </div>
-                    <div class = "photo mix all apps icons web">
+                    <div class = "photo" data-tags = "apps,icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
@@ -341,7 +341,7 @@
                         <p class = "photoTitle">neque porro quisquam</p>
                         <p class = "tags">apps, icons, web</p>
                     </div>
-                    <div class = "photo mix all apps icons web">
+                    <div class = "photo" data-tags = "apps,icons,web">
                         <div class = "crossContainer">
                             <div class = "cross"></div>
                         </div>
