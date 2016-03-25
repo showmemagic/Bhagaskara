@@ -272,7 +272,13 @@ $(document).ready(function() {
 
 
     }
-
+//**********************************BXSLIDER********************************//
+    $('.bxslider').bxSlider({
+        slideWidth: 800,
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
+    });
 
     toggleMenu();
     checkForm();

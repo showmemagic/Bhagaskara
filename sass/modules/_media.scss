@@ -128,6 +128,11 @@
             }
         }
     }
+    .sliderContainer {
+        .sliderText {
+            font-size: 1.4em;
+        }
+    }
     
  }
 
@@ -245,6 +250,17 @@
             .bottomText {
                 padding-left: 3%;
             }
+        }
+    }
+
+    .sliderContainer {
+        .sliderImg {
+            img {
+                width: 30%;
+            }
+        }
+        .sliderText {
+            font-size: 1.2em;
         }
     }
 
@@ -521,7 +537,11 @@
             }
         }
     }
-
+    .sliderContainer {
+        .sliderText {
+            font-size: 1.1em;
+        }
+    }
     
 }
 
