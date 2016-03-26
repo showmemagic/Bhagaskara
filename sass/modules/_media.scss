@@ -381,6 +381,10 @@
              }
         }
     }
+
+    .bx-wrapper .bx-viewport {
+        padding-bottom: 70%;
+    }
  }
 
 @media only screen and (max-width: 450px) {
@@ -543,5 +547,8 @@
         }
     }
     
+    .bx-wrapper .bx-viewport {
+        padding-bottom: 82%;
+    }
 }
 

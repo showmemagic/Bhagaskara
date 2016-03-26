@@ -278,6 +278,8 @@ $(document).ready(function() {
         minSlides: 1,
         maxSlides: 1,
         moveSlides: 1,
+        auto: true,
+        pause: 7000,
     });
 
     toggleMenu();

@@ -10,7 +10,7 @@ $iconWidth: 100%/6;
         background-position: center;
         display: inline-block;
         &:hover {
-            background-image: url("../images/#{$icon}hover.png")
+            background-image: url("../images/#{$icon}hover.png");
         }
     }
 }
