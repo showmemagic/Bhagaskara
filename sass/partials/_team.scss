@@ -6,6 +6,7 @@
 .teamContainerOne {
         @include flexBox;
         @include flexJustify(center);
+        margin-bottom: 2%;
         .corners {
             @include flexBox;
             width: 35%;
@@ -34,41 +35,65 @@
     @include flexBox;
     @include flexJustify(center);
     padding-top: 5%;
+    padding-bottom: 5%;
     margin: 0;
     width: 100%;
     .teamShapeLeft {
         width: 20%;
         text-align: right;
-        .teamLeft {
-        width: 30%;
-        min-width: 64px;
-        background-image: url("../images/leftarrow.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 80%;
-        padding-top: 33%;
-        display: inline-block;
-        &:hover {
-            background-image: url("../images/leftarrowhover.png");
-        }
+    }
+    .teamShapeRight {
+    width: 20%;
+    text-align: left; 
     }
 }
-    .teamShapeRight {
-        width: 20%;
-        text-align: left;
-        .teamRight {
-            width: 30%;
-            min-width: 64px;
-            background-image: url("../images/rightarrow.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 80%;
-            padding-top: 33%;
+
+.teammateContainer {
+    li {
+        text-align: center;
+        height: 400px;
+        img {
+            width: 70%;
             display: inline-block;
-            &:hover {
-                background-image: url("../images/rightarrowhover.png");
-            }
-        }  
+            border-radius: 50%;
+        }
     }
-    
+    p {
+        font-family: "latoregular";
+        color: #484848;
+    }
+    .teammate {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-weight: bold;
+        
+    }
+    .teamSocialIcons {
+        .teamFb {
+            display: inline-block;
+            background-image: url("../images/facebook.png");
+            width: 22%;
+            min-width: 48px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-top: 22%;
+            background-position: center;
+            &:hover {
+                background-image: url("../images/facebookhover.png");
+            }
+        }
+        .teamGmail {
+            display: inline-block;
+            background-image: url("../images/gmail.png");
+            width: 22%;
+            min-width: 48px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-top: 22%;
+            background-position: center;
+            &:hover {
+                background-image: url("../images/gmailhover.png");
+            }
+        }
+    }
 }

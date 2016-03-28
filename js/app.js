@@ -1,11 +1,4 @@
 $(document).ready(function() {
-	function test_match_media_with_listener(){
-        var mq = window.matchMedia("(max-width: 630px)");
-        mq.addListener(changeWidth);
-        changeWidth(mq);
-
-        
-    }
 
 //*****************************HAMBURGER MENU********************************//
     function toggleMenu() {
@@ -273,14 +266,32 @@ $(document).ready(function() {
 
     }
 //**********************************BXSLIDER********************************//
-    $('.bxslider').bxSlider({
-        slideWidth: 800,
-        minSlides: 1,
-        maxSlides: 1,
-        moveSlides: 1,
-        auto: true,
-        pause: 7000,
-    });
+    function slideImages() {
+       $(".blogSlider").bxSlider({
+            slideWidth: 800,
+            minSlides: 1,
+            maxSlides: 1,
+            moveSlides: 1,
+            auto: true,
+            pause: 7000,
+        }); 
+    }
+    
+//********************************TEAM SLIDER*******************************//
+    function slideTeam() {
+        $(".teamSlider").bxSlider({
+            slideWidth: 300,
+            minSlides: 1,
+            maxSlides: 3,
+            moveSlides: 1,
+            pager: false,
+            nextSelector: "#teamRight",
+            prevSelector: "#teamLeft",
+            nextText: '<img src = "images/rightarrow.png" height="65" width="65">',
+            prevText: '<img src = "images/leftarrow.png" height="65" width="65">'
+        });
+    }
+    
 
     toggleMenu();
     checkForm();
@@ -291,5 +302,6 @@ $(document).ready(function() {
     zoomImages();
     loadImages();
     filterImages();
-
+    slideImages();
+    slideTeam();
 });

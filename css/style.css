@@ -131,7 +131,6 @@
 ===================================*/
 .bx-wrapper .bx-viewport {
   left: -5px;
-  padding-bottom: 58%;
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
   -moz-transform: translatez(0);
@@ -785,6 +784,7 @@ nav {
   -webkit-justify-content: center;
   -moz-webkit-content: center;
   justify-content: center;
+  margin-bottom: 2%;
 }
 
 .teamContainerOne .corners {
@@ -821,6 +821,7 @@ nav {
   -moz-webkit-content: center;
   justify-content: center;
   padding-top: 5%;
+  padding-bottom: 5%;
   margin: 0;
   width: 100%;
 }
@@ -830,39 +831,61 @@ nav {
   text-align: right;
 }
 
-.teamContainerTwo .teamShapeLeft .teamLeft {
-  width: 30%;
-  min-width: 64px;
-  background-image: url("../images/leftarrow.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-  padding-top: 33%;
-  display: inline-block;
-}
-
-.teamContainerTwo .teamShapeLeft .teamLeft:hover {
-  background-image: url("../images/leftarrowhover.png");
-}
-
 .teamContainerTwo .teamShapeRight {
   width: 20%;
   text-align: left;
 }
 
-.teamContainerTwo .teamShapeRight .teamRight {
-  width: 30%;
-  min-width: 64px;
-  background-image: url("../images/rightarrow.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-  padding-top: 33%;
-  display: inline-block;
+.teammateContainer li {
+  text-align: center;
+  height: 400px;
 }
 
-.teamContainerTwo .teamShapeRight .teamRight:hover {
-  background-image: url("../images/rightarrowhover.png");
+.teammateContainer li img {
+  width: 70%;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.teammateContainer p {
+  font-family: "latoregular";
+  color: #484848;
+}
+
+.teammateContainer .teammate {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.teammateContainer .teamSocialIcons .teamFb {
+  display: inline-block;
+  background-image: url("../images/facebook.png");
+  width: 22%;
+  min-width: 48px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 22%;
+  background-position: center;
+}
+
+.teammateContainer .teamSocialIcons .teamFb:hover {
+  background-image: url("../images/facebookhover.png");
+}
+
+.teammateContainer .teamSocialIcons .teamGmail {
+  display: inline-block;
+  background-image: url("../images/gmail.png");
+  width: 22%;
+  min-width: 48px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 22%;
+  background-position: center;
+}
+
+.teammateContainer .teamSocialIcons .teamGmail:hover {
+  background-image: url("../images/gmailhover.png");
 }
 
 .skillsContainerOne {
@@ -950,6 +973,10 @@ nav {
 
 .sliderContainer {
   margin-top: 10%;
+}
+
+.sliderContainer li {
+  height: 435px;
 }
 
 .sliderContainer .sliderImg {
@@ -1533,6 +1560,9 @@ h5 {
   .sliderTop .sliderData .bottomText {
     padding-left: 3%;
   }
+  .sliderContainer li {
+    height: 350px;
+  }
   .sliderContainer .sliderImg img {
     width: 30%;
   }
@@ -1639,9 +1669,6 @@ h5 {
     padding: 4%;
     font-size: 1.3em;
   }
-  .bx-wrapper .bx-viewport {
-    padding-bottom: 70%;
-  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1744,10 +1771,10 @@ h5 {
   .contactContainerTwo .rightContact .socialMedia .mediaContent {
     margin-right: 12%;
   }
+  .sliderContainer li {
+    height: 300px;
+  }
   .sliderContainer .sliderText {
     font-size: 1.1em;
-  }
-  .bx-wrapper .bx-viewport {
-    padding-bottom: 82%;
   }
 }

@@ -254,6 +254,9 @@
     }
 
     .sliderContainer {
+        li {
+            height: 350px;
+        }
         .sliderImg {
             img {
                 width: 30%;
@@ -283,10 +286,6 @@
     .gallery {
         .photo {
             width: 45%;
-            // &:nth-child(1),
-            // &:nth-child(2) {
-            //     display: block;
-            // }
         }
     }
 
@@ -382,9 +381,9 @@
         }
     }
 
-    .bx-wrapper .bx-viewport {
-        padding-bottom: 70%;
-    }
+    // .bx-wrapper .bx-viewport {
+    //     padding-bottom: 70%;
+    // }
  }
 
 @media only screen and (max-width: 450px) {
@@ -542,13 +541,16 @@
         }
     }
     .sliderContainer {
+        li {
+            height: 300px;
+        }
         .sliderText {
             font-size: 1.1em;
         }
     }
     
-    .bx-wrapper .bx-viewport {
-        padding-bottom: 82%;
-    }
+    // .bx-wrapper .bx-viewport {
+    //     padding-bottom: 82%;
+    // }
 }
 
